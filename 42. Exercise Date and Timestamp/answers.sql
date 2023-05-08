@@ -6,7 +6,7 @@
 -- using NOW() and INTERVAL() --
 --ans-- 237200 --
 SELECT COUNT(first_name) from employees
-where birth_date < now() - interval '61 year'; -- use 61 years because we are subtracting from the current year directly 
+where birth_date < NOW() - interval '61 years'; -- use 61 years because we are subtracting directy from NOW()
 
 -- using EXTRACT() and AGE() --
 --ans-- 237200 --
